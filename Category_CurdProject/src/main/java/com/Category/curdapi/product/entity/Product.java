@@ -24,7 +24,7 @@ public class Product {
     private int stockQuantity;
 
     @ManyToOne
-    @JoinColumn(name = "category_id") // Foreign key in Product table
+    @JoinColumn(name = "category_id")
     private Category category;
 
     @ManyToMany
@@ -35,7 +35,6 @@ public class Product {
     )
     private Set<Category> Categorys;
 
-    // Constructors, getters, and setters
 
     public Product() {}
 

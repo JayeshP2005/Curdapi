@@ -28,7 +28,7 @@ public class CategoryService {
     }
 
     public Category createCategory(Category category) {
-        logger.info("Saving category: {}", category); // Log the category being saved
+        logger.info("Saving category: {}", category);
         return categoryRepository.save(category);
     }
 

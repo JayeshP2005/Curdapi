@@ -1,4 +1,4 @@
-package com.Category.curdapi.entity;  // Adjust the package name accordingly
+package com.Category.curdapi.entity; 
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,10 +17,8 @@ public class Category {
 
     private String name;
 
-    @OneToMany(mappedBy = "category")  // One category can have many products
+    @OneToMany(mappedBy = "category") 
     private Set<Product> products;
-
-    // Constructors, getters, and setters
 
     public Category() {}
 
